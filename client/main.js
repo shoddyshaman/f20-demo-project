@@ -11,6 +11,7 @@ const handleSearch = () => {
     axios.get(`${base_url}/api/search?search=${searchVal}`)
     .then(res => {
         console.log(res.data.results)
+        displayContainer.innerHTML = ``
         res.data.results.map(result => {
             let displayDiv = document.createElement('div')
             displayDiv.innerHTML = `
