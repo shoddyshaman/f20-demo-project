@@ -10,7 +10,7 @@ module.exports = {
         `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${search}`
       )
       .then((response) => {
-        console.log(res.data);
+        console.log(response.data);
         res.status(200).send(response.data);
       })
       .catch((err) => console.log(err));
