@@ -13,8 +13,10 @@ app.use(cors())
 // app.put('/api/todo/:id', updateItem)
 // app.delete('/api/todo/:id', deleteItem)
 
-//movie endppoints
+//external api endppoints
 app.get('/api/search',searchMovie)
+
+//internal endpoints
 
 app.listen(5050, () => console.log(`listening on 5050`))
 
